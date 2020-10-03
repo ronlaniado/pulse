@@ -1,48 +1,32 @@
-<p align="center">
+# Pulse Framework `3.0`
+
+_Pulse is a global state and logic framework for reactive Typescript & Javascript applications. Supporting frameworks like VueJS, React and React Native._
+
+Lightweight, modular and powerful. An alternative to `Redux`/`VueX`/`MobX` and request libraries such as `Axios`/`Request.js`. Use Pulse to create a **_core_** state & logic library for your application; plug and play directly into any UI Framework.
+
+Created by [@jamiepine]() | Sponsored and maintained by the [Notify Team]()
+
+### Official website: [pulsejs.org](https://pulsejs.org/v3/introduction/what-is-pulse.html)
+
+<p align="left">
+  <a href="https://discord.gg/RjG8ShB"><img src="https://discordapp.com/api/guilds/658189217746255881/embed.png" alt="Join Discord"></a>
   <a href="https://patreon.com/jamiepine"><img src="https://img.shields.io/badge/donate-patreon-F96854.svg" alt="Donate on patreon"></a>
-  <a href="https://twitter.com/jamiepine"><img src="https://img.shields.io/twitter/follow/jamiepine.svg?label=Follow" alt="Follow on twitter"></a>
+  <a href="https://twitter.com/jamiepine"><img src="https://img.shields.io/twitter/follow/jamiepine.svg?label=Jamie's Twitter" alt="Follow on twitter"></a>
   <a href="https://twitter.com/pulseframework"><img src="https://img.shields.io/twitter/follow/pulseframework.svg?label=Pulse+Twitter" alt="Follow Pulse on twitter"></a>
-  <a href="https://discord.gg/Jc2kgYb"><img src="https://discordapp.com/api/guilds/453678030850752532/embed.png" alt="Join Discord"></a>
-  <a href="https://npmjs.com/pulse-framework"><img src="https://img.shields.io/npm/v/pulse-framework.svg" alt="NPM Package Version"></a>
-  <a href="https://npmjs.com/pulse-framework"><img src="https://img.shields.io/npm/dm/pulse-framework.svg" alt="NPM Monthly Downloads"></a>
-  <a href="https://npmjs.com/pulse-framework"><img src="https://img.shields.io/npm/dw/pulse-framework.svg" alt="NPM Weekly Downloads"></a>
-  <a href="https://npmjs.com/pulse-framework"><img src="https://img.shields.io/npm/dt/pulse-framework.svg" alt="NPM Total Downloads"></a>
-  <a href="https://npmjs.com/pulse-framework"><img src="https://img.shields.io/bundlephobia/min/pulse-framework.svg" alt="NPM Bundle MIN Size"></a>
-  <a href="https://github.com/jamiepine/pulse"><img src="https://img.shields.io/github/license/jamiepine/pulse.svg" alt="GitHub License"></a>
-  <a href="https://github.com/jamiepine/pulse"><img src="https://img.shields.io/github/languages/code-size/jamiepine/pulse.svg" alt="GitHub Code Size"></a>
-  <a href="https://github.com/jamiepine/pulse"><img src="https://img.shields.io/github/repo-size/jamiepine/pulse.svg" alt="GitHub Repo Size"></a>
 </p>
 
-Pulse is an application logic library for reactive Javascript frameworks with support for VueJS, React and React Native. Lightweight, modular and powerful, but most importantly easy to understand.
+```ts
+const App = new Pulse();
+
+const Hello = App.State<string>('the sound of music');
+```
 
 ## Why Pulse?
 
-After exploring the many options for Javascript state libraries, including the popular VueX and Redux, I felt like I needed a simpler solution. I wanted to get more out of a library than just state management― something that could provide solid structure for the **entire** application. It needed to be structured and simple, but also scalable. This library provides everything needed to get a reactive javascript front-end application working fast, taking care to follow best practices and to employ simple terminology that makes sense even to beginners.
+Pulse provides a clean-cut toolset to build a Javascript application quickly and efficiently. It encourges developers to construct a core library that can be dropped into any UI framework. Your `core` is the brain of your application, it will handle everything from state management, API requests to all logic and calculations. Pulse will supply pre-computed data to your UI components, in the framework of your choice with complete reactivity.
 
-I built this framework reflective of the architecture in which we use at Notify.me, and as a replacement for VueX at Notify also, making sure it is also compatible with React and vanilla environments. The team at Notify love it and I think you will too.
+### Typescript
 
-## Features
+Pulse is written in Typescript and is designed to support it heavily. Everything is type safe out of the box and encourages you to write clean typed code.
 
-- :gear: Modular structure using "collections"
-- :zap: Cached data & filters with dependency based regeneration
-- :sparkles: Automatic data normalization
-- :lock: Model based data validation
-- :timer_clock: History tracking with smart undo functions
-- :crystal_ball: Create data relations between collections
-- :nerd_face: Database style functions
-- :gem: SSOT architecture (single source of truth)
-- :closed_book: Error logging & snapshot bug reporting
-- :wrench: Wrappers for helpers, utilities and service workers
-- :construction: Task queuing for race condition prevention
-- :telephone_receiver: Promise based HTTP requests and websocket connections
-- :hourglass_flowing_sand: Timed interval task handler
-- :bus: Event bus
-- :floppy_disk: Persisted data API for localStorage, sessionStorage & more
-- :key: Optional pre-built authentication layer
-- :leaves: Lightweight (only 22KB) with 0 dependencies
-- :fire: Supports Vue, React and React Native
-- :yellow_heart: Well documented (I'm getting there...)
-
-If you wish contribute, that is very much welcome! But please reach out first so we don't work on the same thing at the same time, twitter dm @jamiepine or Discord jam#0001
-
-FULL DOCUMENTATION HERE: [pulsejs.org](https://pulsejs-docs.ijamespine.now.sh)
+Read the [documentation](https://pulsejs.org/v3/introduction/what-is-pulse.html) to learn more!
